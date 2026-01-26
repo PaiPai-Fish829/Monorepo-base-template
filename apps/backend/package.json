@@ -9,7 +9,7 @@
   "keywords": [],
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon -e ts,json --exec 'dotenvx run -f ../../.env --ignore=MISSING_ENV_FILE -- ts-node src/index.ts'"
+    "dev": "nodemon -e ts,json --exec 'dotenvx run -f ../../.env --ignore=MISSING_ENV_FILE -- tsx src/index.ts'"
   },
   "dependencies": {
     "@trpc/server": "^11.8.1",
@@ -23,7 +23,7 @@
     "@types/node": "^24.10.9",
     "nodemon": "^3.1.11",
     "rimraf": "^6.1.2",
-    "ts-node": "^10.9.2",
+    "tsx": "^4.19.2",
     "typescript": "~5.9.3"
   }
 }
