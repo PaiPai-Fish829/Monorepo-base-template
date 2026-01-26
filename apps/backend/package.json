@@ -1,0 +1,29 @@
+{
+  "name": "backend",
+  "type": "./src/index.ts",
+  "version": "1.0.0",
+  "packageManager": "pnpm@10.28.1",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon -e ts,json --exec 'dotenvx run -f ../../.env --ignore=MISSING_ENV_FILE -- ts-node src/index.ts'"
+  },
+  "dependencies": {
+    "@trpc/server": "^11.8.1",
+    "express": "^5.2.1",
+    "superjson": "^2.2.6",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@dotenvx/dotenvx": "^1.52.0",
+    "@types/express": "^5.0.6",
+    "@types/node": "^24.10.9",
+    "nodemon": "^3.1.11",
+    "rimraf": "^6.1.2",
+    "ts-node": "^10.9.2",
+    "typescript": "~5.9.3"
+  }
+}
